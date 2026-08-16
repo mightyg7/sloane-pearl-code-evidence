@@ -8,8 +8,8 @@ much larger platform).
 
 For the full submission narrative, financials, and disclosure docs, see the
 main submission repo (shared separately). For proof these mechanisms are
-*live in production* for Sloane & Pearl specifically — not just present in
-the codebase — see that repo's `evidence/agent-logs/` (real, dated exports
+*live in production* for Sloane & Pearl specifically, not just present in
+the codebase, see that repo's `evidence/agent-logs/` (real, dated exports
 from the production database) and the demo video.
 
 ## Why this repo, and not the full platform codebase
@@ -30,7 +30,7 @@ evidence in the main submission repo (`evidence/agent-logs/`, dated and
 queryable), this is intended to satisfy "the repository must contain all
 necessary source code" without exposing unrelated third parties' private
 data. If this scope turns out to be insufficient for verification, we're
-glad to provide additional excerpts on request — just not the full
+glad to provide additional excerpts on request, just not the full
 multi-tenant codebase wholesale.
 
 ## What's here, and what claim each directory backs
