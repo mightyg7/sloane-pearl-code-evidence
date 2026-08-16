@@ -12,6 +12,27 @@ main submission repo (shared separately). For proof these mechanisms are
 the codebase — see that repo's `evidence/agent-logs/` (real, dated exports
 from the production database) and the demo video.
 
+## Why this repo, and not the full platform codebase
+
+Sloane & Pearl runs on a larger, multi-tenant AI-agent platform
+(`fashion-autopilot`) that also operates other, unrelated stores — their
+live customer orders, PII, and business data live in the same database and
+codebase. We are not sharing that repository, because doing so would expose
+those other businesses' real customer data to reviewers who have no
+relationship to them; that's a real privacy obligation, not a convenience
+decision.
+
+Instead, this repo is a deliberate, disclosed substitute: every file here is
+a real, unmodified excerpt of the platform's actual source tree — not a
+mock, not a simplified rewrite — covering every AI-decision mechanism this
+submission's claims depend on. Combined with the production database
+evidence in the main submission repo (`evidence/agent-logs/`, dated and
+queryable), this is intended to satisfy "the repository must contain all
+necessary source code" without exposing unrelated third parties' private
+data. If this scope turns out to be insufficient for verification, we're
+glad to provide additional excerpts on request — just not the full
+multi-tenant codebase wholesale.
+
 ## What's here, and what claim each directory backs
 
 - **`meta-auto-kill/`** — pauses a live, spending Meta ad campaign
