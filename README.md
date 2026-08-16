@@ -58,7 +58,11 @@ multi-tenant codebase wholesale.
   structured, translated measurement table.
 - **`pricing-auto-apply/`** — recomputes a break-even-optimal retail price
   from live COGS/FX/fee data and rewrites it directly on the live Shopify
-  store, including price cuts, with no human review by design.
+  store, including price cuts, with no human review by design. Built and
+  proven (24 real changes fired for Sloane & Pearl), but **currently
+  disabled** pending a data-quality fix to the low-sample-size cost input
+  that feeds it — see the main submission repo's
+  `narrative/ai-native-operations.md` for the full disclosure.
 - **`catalog-copy-gemini/`** — the Gemini/Vertex AI integration
   (`vertex-provider.ts`, new) and its call site (`ai-enhance.ts`), which
   satisfies the hackathon's Gemini + Google Cloud requirement. Scoped to
